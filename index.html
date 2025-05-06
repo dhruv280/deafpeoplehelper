@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gesture Recognition App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">Accessing camera...</div>
+
+  <div class="app-container hidden">
+    <aside class="sidebar">
+      <h2>GestureApp</h2>
+      <nav>
+        <a href="#">🏠 Home</a>
+        <a href="#">🤟 Gesture Library</a>
+        <a href="#">⚙️ Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="video-wrapper">
+        <video id="webcam" autoplay playsinline muted></video>
+        <canvas id="overlay"></canvas>
+      </div>
+      <div class="gesture-log">
+        <h3>Gesture Log</h3>
+        <ul id="log-list"></ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
